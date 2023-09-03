@@ -30,7 +30,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 
-    @media (max-width: $first-brakepoint) {
+    @include variables.first-brake {
         max-width: none;
         padding-left: 5%;
         padding-right: 5%;
@@ -61,12 +61,12 @@ header {
             right: 0;
             display: none;
 
-            @media (max-width: $second-brakepoint) {
+            @include variables.second-brake {
                 display: block;
             }
         }
 
-        @media (max-width: $first-brakepoint) {
+        @include variables.first-brake {
             gap: 24px;
         }
 
@@ -75,7 +75,7 @@ header {
             text-decoration: none;
             color: gray;
 
-            @media (max-width: $second-brakepoint) {
+            @include variables.second-brake {
                 display: none;
             }
         }
@@ -105,12 +105,12 @@ main {
         align-self: center;
         position: relative;
 
-        @media (max-width: $last-brakepoint) {
+        @include variables.last-brake {
             min-width: 200px;   
             max-width: 200px;
         }
 
-        @media (max-width: $second-brakepoint) {
+        @include variables.second-brake {
             max-width: 332px;
             min-width: 332px;
         }
@@ -126,7 +126,7 @@ main {
             font-size: 48px;
             margin-bottom: 24px;
 
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 font-size: 24px;  
             }
 
@@ -138,7 +138,7 @@ main {
             font-size: 20px;
             margin-top: 20px;
 
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 font-size: 10px;
             }
 
@@ -159,7 +159,7 @@ main {
             justify-content: space-between;
             align-items: center;
 
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 height: 50px; 
             }
 
@@ -182,7 +182,7 @@ main {
     margin-left: auto;
     margin-right: auto;
 
-    @media (max-width: $first-brakepoint) {
+    @include variables.first-brake {
         flex-direction: column;
         align-items: center;
     }
@@ -193,7 +193,7 @@ main {
         position: relative;
         width: 40%;
 
-        @media (max-width: $first-brakepoint) {
+        @include variables.first-brake {
             width: 100%;
         }
 
@@ -203,7 +203,7 @@ main {
             top: -40px;
             overflow: hidden;
 
-            @media (max-width: $first-brakepoint) {
+            @include variables.first-brake {
                 right: auto;
                 left: -300px;
             }
@@ -257,7 +257,7 @@ main {
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        @media (max-width: $first-brakepoint) {
+        @include variables.first-brake {
             width: 100%;
             margin-left: 0;
         }
@@ -389,7 +389,7 @@ main {
         min-width: 464px;
         margin-left: 10%;
 
-        @media (max-width: $last-brakepoint) {
+        @include variables.last-brake {
             margin-left: 0;
             min-width: 258px;   
         }
@@ -400,7 +400,7 @@ main {
             margin-bottom: 17px;
             color: #F3B562;
 
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 font-size: 13px; 
             }
         }
@@ -409,8 +409,7 @@ main {
             font-size: 41px;
             text-transform: uppercase;
             margin-top: 17px;
-
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 font-size: 22px;
             }
         }
@@ -419,7 +418,7 @@ main {
             font-size: 16px;
             margin-top: 40px;
 
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 font-size: 10px;
             }
         }
@@ -437,7 +436,7 @@ main {
             justify-content: space-between;
             align-items: center;
 
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 height: 50px;
             }
 
@@ -478,7 +477,7 @@ main {
                 color: #647B64;
                 text-transform: uppercase;
                 margin-top: 17px;
-                @media (max-width: $second-brakepoint) {
+                @include variables.second-brake {
                     font-size: 22px;
                 }
             }
@@ -489,7 +488,7 @@ main {
             gap: 25px;
             overflow: hidden;
 
-            @media (max-width: $second-brakepoint) {
+            @include variables.second-brake {
             display: none;
             }
 
@@ -512,7 +511,7 @@ main {
     overflow: hidden;
 
     .bottom-box:last-of-type {
-        @media (max-width: $last-brakepoint) {
+        @include variables.last-brake {
             display: none;
         }
     }
@@ -529,7 +528,7 @@ main {
         transition-duration: 0.4s;
         min-width: 362px;
 
-        @media (max-width: $last-brakepoint) {
+        @include variables.last-brake {
             min-width: 233px;
         }
 
@@ -541,20 +540,20 @@ main {
         h2 {
             font-size: 16px;
             margin-bottom: 5px;
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 font-size: 8px;
             }
         }
         
         span {
             font-size: 13px;
-            @media (max-width: $last-brakepoint) {
+            @include variables.last-brake {
                 font-size: 8px;
             }
         }
         
         p {
-            @media (max-width: $second-brakepoint) {
+            @include variables.second-brake {
             font-size: 12px;
             }
         }
@@ -581,7 +580,7 @@ footer {
     gap: 40px;
     grid-template-columns: repeat(3, 1fr);
 
-    @media (max-width: $first-brakepoint) {
+    @include variables.first-brake {
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;

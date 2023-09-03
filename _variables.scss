@@ -1,3 +1,17 @@
-$first-brakepoint: 1250px;
-$second-brakepoint: 730px;
-$last-brakepoint: 375px;
+@mixin first-brake {
+    @media (max-width: 1250px) {
+        @content
+    }
+};
+
+@mixin second-brake {
+    @media (max-width: 730px) {
+        @content
+    }
+};
+
+@mixin last-brake {
+    @media (max-width: 375px) {
+        @content
+    }
+}
