@@ -389,9 +389,15 @@ main {
         min-width: 464px;
         margin-left: 10%;
 
+        @include variables.second-brake {
+            margin-left: 0;
+            min-width: 375px;
+            max-width: 375px;  
+        }
+
         @include variables.last-brake {
             margin-left: 0;
-            min-width: 258px;   
+            min-width: 258px;  
         }
 
         .up-title {

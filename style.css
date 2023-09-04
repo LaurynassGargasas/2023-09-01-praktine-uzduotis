@@ -339,6 +339,13 @@ main .left .button img {
   min-width: 464px;
   margin-left: 10%;
 }
+@media (max-width: 730px) {
+  .almost-last .right {
+    margin-left: 0;
+    min-width: 375px;
+    max-width: 375px;
+  }
+}
 @media (max-width: 375px) {
   .almost-last .right {
     margin-left: 0;
